@@ -62,7 +62,7 @@ var almacen = {
         grilla += '<div class="ui-grid-b">' +
                   '<div class="ui-block-a"><div class="ui-bar ui-bar-a" style="height:60px">Per</div></div>' +
                   '<div class="ui-block-b"><div class="ui-bar ui-bar-a" style="height:60px">Dia</div></div>' +
-                  '<div class="ui-block-c"><div class="ui-bar ui-bar-a" style="height:60px">Tot</div></div>'
+                  '<div class="ui-block-c"><div class="ui-bar ui-bar-a" style="height:60px">Tot</div></div>';
         
         
         almacen.db = window.openDatabase("hotelApp","1.0","HotelApp Storage",20000);
@@ -71,10 +71,10 @@ var almacen = {
             grilla += 
                 '<div class="ui-block-a"><div class="ui-bar ui-bar-a" style="height:60px">'+t.rows.item(i).pr+'</div></div>' +
                 '<div class="ui-block-b"><div class="ui-bar ui-bar-a" style="height:60px">'+t.rows.item(i).di+'</div></div>' +
-                '<div class="ui-block-c"><div class="ui-bar ui-bar-a" style="height:60px">'+t.rows.item(i).th+'</div></div>'
+                '<div class="ui-block-c"><div class="ui-bar ui-bar-a" style="height:60px">'+t.rows.item(i).th+'</div></div>';
         } 
         });
-        grilla += '</div>'
+        grilla += '</div>';
         $('#div-historial').html(grilla);
     }
 }
