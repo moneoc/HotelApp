@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>HotelApp</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/jquery.mobile-1.4.5.min.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <div data-role="page" id="home">
+            <div data-role="header" data-theme="b"><h1>HotelApp</h1></div>
+            <div role="main" class="ui-content">
+                <ul data-role="listview" data-inset="true">
+                    <li><a href="#nr1">Reservar</a></li>
+                    <li><a href="#historial">Historial</a></li>
+                    <li><a href="#politicas">Políticas</a></li>
+                </ul>
+            </div>
+            <div data-role="footer" data-position="fixed"><span style="font-size:8pt;">Todos los derechos reservados &copy;</span> <a href="#nosotros" data-transition="slideup">Nosotros</a></div>
+        </div>
+        <div data-role="page" id="nosotros">
+            <div data-role="header"><a href="#" data-rel="back">Atrás</a><h1>Nosotros</h1></div>
+            <div role="main" class="ui-content">
+                <p>Note above that there is a meta viewport tag in the head to specify how the browser should display the page zoom level and dimensions. If this isn't set, many mobile browsers will use a "virtual" page width around 900 pixels to make it work well with existing desktop sites but the screens may look zoomed out and too wide. By setting the viewport attributes to content="width=device-width, initial-scale=1", the width will be set to the pixel width of the device screen.</p>
+            </div>
+        </div>
+        <div data-role="page" id="politicas">
+            <div data-role="header"><a href="#" data-rel="back" class="ui-btn ui-icon-delete ui-btn-icon-notext ui-corner-all">Atrás</a><h1>Politicas</h1></div>
+            <div role="main" class="ui-content">
+                <p>Note above that there is a meta viewport tag in the head to specify how the browser should display the page zoom level and dimensions. If this isn't set, many mobile browsers will use a "virtual" page width around 900 pixels to make it work well with existing desktop sites but the screens may look zoomed out and too wide. By setting the viewport attributes to content="width=device-width, initial-scale=1", the width will be set to the pixel width of the device screen.</p>
+            </div>
+        </div>
+        <div data-role="page" id="historial">
+            <div data-role="header"><a href="#" data-rel="back">Atrás</a><h1>Historial</h1></div>
+            <div role="main" class="ui-content">
+            </div>
+        </div>
+        <div data-role="page" id="nr1">
+            <div data-role="header"><h1>Reservar</h1></div>
+            <div role="main" class="ui-content">
+                <ul data-role="listview">
+                    <li data-role="list-divider">Datos de Reserva</li>
+                    <li>
+                        <select id="nrPer">
+                            <option value="">Personas</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </li>
+                    <li>
+                        <select id="nrDia">
+                            <option value="">Dias</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </li>
+                </ul>
+            </div>
+            <div data-role="footer" data-position="fixed">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#">Siguiente</a></li>
+                        <li><a href="#home">Cancelar</a></li>
+                    </ul>
+                </div><!-- /navbar -->
+            </div>
+        </div>
+        <div data-role="page" id="nr2">
+            <div data-role="header"><h1>Reservar</h1></div>
+            <div role="main" class="ui-content">
+                <ul data-role="listview">
+                    <li data-role="list-divider">Tipo de habitación</li>
+                    <li><a href="#">Suite</a></li>
+                    <li><a href="#">Doble</a></li>
+                    <li><a href="#">Sencilla</a></li>
+                </ul>
+            </div>
+            <div data-role="footer" data-position="fixed">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#">Reservar</a></li>
+                        <li><a href="#home">Cancelar</a></li>
+                    </ul>
+                </div><!-- /navbar -->
+            </div>
+        </div>
+        <div data-role="page" id="registro">
+            <div data-role="header"><h1>Registro</h1></div>
+            <div role="main" class="ui-content">
+                <ul data-role="listview">
+                    <li data-role="list-divider">Datos Personales</li>
+                    <li><input type="text" id="regNom" placeholder="Nombre Completo"></li>
+                    <li><input type="email" id="regMail" placeholder="Correo Electrónico"></li>
+                    <li><input type="tel" id="regTel" placeholder="Teléfono"></li>
+                    <li id="regFoto"><a href="#" id="tomarFoto">Tomar Foto</a></li>
+                </ul>
+            </div>
+            <div data-role="footer">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#">Registrar</a></li>
+                    </ul>
+                </div><!-- /navbar -->
+            </div>
+        </div>
+        
+        <script src="phonegap.js"></script>
+        <script src="js/jquery-1.12.2.min.js"></script>
+        <script src="js/jquery.mobile-1.4.5.min.js"></script>
+        <script src="js/actions.js"></script>
+		<script src="js/almacenamiento.js"></script>
+		<script src="js/servidor.js"></script>
+        <script src="js/API/capture.js"></script>
+        <script src="js/API/fileTransfer.js"></script>
+    </body>
+</html>
