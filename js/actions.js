@@ -17,7 +17,7 @@ var fn = {
 		document.addEventListener("online", almacen.leerReservas, false);
         
         //Consulta el Historial y lo presenta
-        $('#btnHistorial').tap(almacen.obtenerhistorial);
+        $('#btnHistorial').tap(almacen.leerHistorial);
     },
     // ------ Funciones de Registro -------
     estaRegistrado: function(){
