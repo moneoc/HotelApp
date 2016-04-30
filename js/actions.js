@@ -15,6 +15,9 @@ var fn = {
 		
 		//Sincronizar automàticamente cuado se conecte a internet
 		document.addEventListener("online", almacen.leerReservas, false);
+        
+        //Consulta el Historial y lo presenta
+        $('#btnHistorial').tap(almacen.obtenerhistorial);
     },
     // ------ Funciones de Registro -------
     estaRegistrado: function(){

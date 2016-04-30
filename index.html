@@ -12,7 +12,7 @@
             <div role="main" class="ui-content">
                 <ul data-role="listview" data-inset="true">
                     <li><a href="#nr1">Reservar</a></li>
-                    <li><a href="#historial">Historial</a></li>
+                    <li><a href="#historial" id="btnHistorial">Historial</a></li>
                     <li><a href="#politicas">Políticas</a></li>
                 </ul>
             </div>
@@ -30,11 +30,13 @@
                 <p>Note above that there is a meta viewport tag in the head to specify how the browser should display the page zoom level and dimensions. If this isn't set, many mobile browsers will use a "virtual" page width around 900 pixels to make it work well with existing desktop sites but the screens may look zoomed out and too wide. By setting the viewport attributes to content="width=device-width, initial-scale=1", the width will be set to the pixel width of the device screen.</p>
             </div>
         </div>
+        
         <div data-role="page" id="historial">
             <div data-role="header"><a href="#" data-rel="back">Atrás</a><h1>Historial</h1></div>
-            <div role="main" class="ui-content">
+            <div role="main" class="ui-content" id="div-historial">
             </div>
         </div>
+        
         <div data-role="page" id="nr1">
             <div data-role="header"><h1>Reservar</h1></div>
             <div role="main" class="ui-content">
